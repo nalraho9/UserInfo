@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+  $(document).ready(function())	{
+	  $
+  }
+  
+	
+	  <tr><td COLSPAN="2" ALIGN="center"><h2>회원 정보 입력</h2></td></tr>   
+	  <TR>   
+	   <TD> 아이디 </TD>   
+	   <TD> <INPUT TYPE="text" NAME="id" SIZE="10" readonly> 
+	   		<INPUT TYPE="button" value="아이디 생성"  onclick="id_search()"></TD> 
+	  <TR>   
+	   <TD> 이름 </TD>
+	      
+	   <TD> <INPUT TYPE="text" NAME="name" SIZE="10"></TD> 
+	   </TR> <TR>   <TD> 암호 </TD>   
+	   <TD> <INPUT TYPE="password" NAME="password" SIZE="10"></TD> 
+	  </TR> 
+	  <TR>   
+	   <TD> 전화번호 </TD>   
+	   <TD> <SELECT NAME="tel1">     
+			   <OPTION SELECTED> 010</OPTION>     
+			   <OPTION> 02</OPTION>     
+			   <OPTION> 053</OPTION>     
+			   <OPTION> 011</OPTION>     
+		    </SELECT>
+		   - <INPUT NAME="tel2" SIZE="4" maxlength=4>
+		   - <INPUT NAME="tel3" SIZE="4" maxlength=4> </TD> 
+	  </TR>
+
+	  <TR>   
+	   <TD> 직업 </TD>   
+	   <TD> 
+	     <SELECT SIZE="1" NAME="job">     
+	       <OPTION SELECTED> 학생</OPTION>     
+		   <OPTION> 회사원</OPTION>     
+		   <OPTION> 자영업</OPTION>     
+		   <OPTION> 기타</OPTION>     
+		 </SELECT> </TD> 
+	  </TR> 
+	  <TR>   
+	   <TD> 성별 </TD>   
+	   <TD> <INPUT TYPE="radio" NAME="gender" VALUE="1" CHECKED>남자&nbsp;&nbsp;       
+	        <INPUT TYPE="radio" NAME="gender" VALUE="2">여자 </TD> 
+	  </TR>
+	  <TR>   
+	   <TD> 취미 </TD>   
+	   <TD> <INPUT TYPE="checkbox" NAME="hobby" VALUE="바둑">바둑&nbsp;&nbsp;     
+	        <INPUT TYPE="checkbox" NAME="hobby" VALUE="게임">게임&nbsp;&nbsp;     
+			<INPUT TYPE="checkbox" NAME="hobby" VALUE="낚시">낚시&nbsp;&nbsp;     
+			<INPUT TYPE="checkbox" NAME="hobby" VALUE="독서">독서 </TD>
+	  </TR> 
+	  <TR>   
+	   <TD> 자기 소개하기</TD>   
+	   <TD> <TEXTAREA ROWS="5" COLS="60" NAME="intro" PLACEHOLDER="자기를 소개하는 글을 쓰세요"></textarea></TD> 
+	  </TR>
+	  <TR>   
+	   <TD COLSPAN="2" ALIGN="center"> <INPUT TYPE="submit" VALUE="등록하기">
+	      <INPUT TYPE="reset" VALUE="취소하기"> 
+       </TD>  
+	  </TR> 
+ 
+
+
+</script> 
+  
+</body>
+</html>

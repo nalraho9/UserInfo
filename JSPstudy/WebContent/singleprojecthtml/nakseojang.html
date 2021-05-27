@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+ <BODY> 
+  <P ALIGN="center"> 
+    <FONT SIZE="6">회원관리 양식</FONT> 
+  </P> 
+  <FORM ACTION="result.html" name="fm" onsubmit="return oncheck()">   
+	<TABLE CELLPADDING="8">      
+	  <TR>   
+	   <TD> 아이디 </TD>   
+	   <TD> <label for="text" NAME="id" SIZE="10" readonly></label> 
+	   		<INPUT TYPE="button" value="아이디 생성"  onclick="id_search()"></TD>
+	  <TR>
+	   <TD> 이름 </TD>   
+	   <TD> <label for="text" NAME="name" SIZE="10"></TD> 
+	   </TR> <TR>   <TD> 암호 </TD>   
+	   <TD> <INPUT TYPE="password" NAME="password" SIZE="10"></TD> 
+	  </TR> 
+	  <TR>   
+	   <TD> 전화번호 </TD>   
+	   <TD> <SELECT NAME="tel1">     
+			   <OPTION SELECTED> 010</OPTION>     
+			   <OPTION> 02</OPTION>     
+			   <OPTION> 053</OPTION>     
+			   <OPTION> 011</OPTION>     
+		    </SELECT>
+		   - <INPUT NAME="tel2" SIZE="4" maxlength=4>
+		   - <INPUT NAME="tel3" SIZE="4" maxlength=4> </TD> 
+	  </TR>
+
+	  <TR>   
+	   <TD> 직업 </TD>   
+	   <TD> 
+	     <SELECT SIZE="1" NAME="job">     
+	       <OPTION SELECTED> 학생</OPTION>     
+		   <OPTION> 회사원</OPTION>     
+		   <OPTION> 자영업</OPTION>     
+		   <OPTION> 기타</OPTION>     
+		 </SELECT> </TD> 
+	  </TR> 
+	  <TR>   
+	   <TD> 성별 </TD>   
+	   <TD> <INPUT TYPE="radio" NAME="gender" VALUE="male">남자&nbsp;&nbsp;       
+	        <INPUT TYPE="radio" NAME="gender" VALUE="female">여자 </TD> 
+	  </TR>
+	  <TR>   
+	   <TD> 취미 </TD>   
+	   <TD> <INPUT TYPE="checkbox" NAME="hobby" VALUE="baduk">바둑&nbsp;&nbsp;     
+	        <INPUT TYPE="checkbox" NAME="hobby" VALUE="game">게임&nbsp;&nbsp;     
+			<INPUT TYPE="checkbox" NAME="hobby" VALUE="fishing">낚시&nbsp;&nbsp;     
+			<INPUT TYPE="checkbox" NAME="hobby" VALUE="reading">독서 </TD>
+	  </TR> 
+	  <TR>   
+	   <TD> 자기 소개하는 글</TD>   
+	   <TD> <TEXTAREA ROWS="3" COLS="60" NAME="Intro" PLACEHOLDER="자기를 소개하는 글을 쓰세요"></textarea></TD> 
+	  </TR>
+	  <TR>   
+	   <TD COLSPAN="2" ALIGN="center" id="last"> <INPUT TYPE="submit" VALUE="등록하기">&nbsp;&nbsp;     
+	      <INPUT TYPE="reset" VALUE="취소하기"> </TD> 
+	  </TR> 
+	</TABLE> 
+  </FORM>
+ </BODY> 
+</html>
